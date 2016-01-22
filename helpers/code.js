@@ -10,6 +10,7 @@ var hljs = require('highlight.js');
  * @returns The HTML inside the helper, with highlight.js classes added.
  */
 module.exports = function(language, options) {
+  // return 'TEST';
   if (typeof language === 'undefined') language = 'html';
 
   var code = hljs.highlight(language, options.fn(this)).value;
